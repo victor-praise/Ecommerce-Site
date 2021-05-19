@@ -1,0 +1,28 @@
+.tabs-container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.TabHeader {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #eee;
+  padding: 6px 12px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.active-tab {
+  border: 1px solid #eee !important;
+  border-bottom: none !important;
+}
+.TabSection {
+  border: 1px solid #eee;
+  padding: 15px;
+}
+.hideTab {
+  display: none;
+}
+.showTab {
+  display: block;
+}

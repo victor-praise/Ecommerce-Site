@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>KFC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" async></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <a href="index.html">Home</a>
+        </span>
+        <h1>1 2 <span class="food">Foods</span></h1>
+        <div class="cart-btn">
+          <span class="nav-icon">cart</span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <div id="cart-overlay" class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">X</span>
+        <h2>your cart</h2>
+        <div class="cart-content" id="cart-content">
+          <!-- end of cart item -->
+        </div>
+        <div class="cart-footer">
+          <h3>total: $ <span class="cart-total">0</span></h3>
+          <button class="clear-cart banner-btn">clear cart</button>
+          <button class="clear-cart2 banner-btn2">Purchase</button>
+        </div>
+      </div>
+    </div>
+    <section class="general">
+      <div class="general-center">
+        <article class="product">
+          <div class="img-container">
+            <img src="./images/kfc1.jpg" alt="product" class="product-img" />
+            <button class="bag-btn" data-id="1">add to cart</button>
+            <h3 class="title-product">combo meal</h3>
+            <h4 class="price">$10</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/bucketchicken.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="2">add to cart</button>
+            <h3 class="title-product">bucket of chicken</h3>
+            <h4 class="price">$15</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/chicken-cooked-cuisine-cutlery-616354.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="3">add to cart</button>
+            <h3 class="title-product">Full roasted chicken</h3>
+            <h4 class="price">$35</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/background-big-bread-bun-236488.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="4">add to cart</button>
+            <h3 class="title-product">chicken sandwich</h3>
+            <h4 class="price">$10</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/sliced-meat-with-vegetables-and-potato-fries-1309595.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="5">add to cart</button>
+            <h3 class="title-product">chicken and chips</h3>
+            <h4 class="price">$18</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/tray-of-cooked-food-2204772.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="6">add to cart</button>
+            <h3 class="title-product">chicken nuggets</h3>
+            <h4 class="price">$19</h4>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="pop-up-content">
+      <button class="close-pop-up">X</button>
+      <h2>To complete order, fill in your details</h2>
+      <form action="">
+        <input class="name-value" type="text" placeholder="Enter your Name" />
+        <input
+          class="address-value"
+          type="text"
+          placeholder="Enter your Address"
+        />
+        <button class="btn-pop-up">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

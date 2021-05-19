@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="tabs.css" />
+  </head>
+  <body>
+    <main>
+      <section id="menu">
+        <h2 class="menu-title">Menu</h2>
+        <section class="tabs-container">
+          <section class="tabs">
+            <button class="TabHeader active-tab" data-tab="1">Foods</button>
+            <button class="TabHeader" data-tab="2">Drinks</button>
+            <button class="TabHeader" data-tab="3">Appetizers</button>
+            <button class="TabHeader" data-tab="4">Deserts</button>
+          </section>
+          <!-- creating the menu -->
+          <section id="tabSection-1" class="TabSection showTab">
+            <p>1. Rice<span class="menu-price">2500 naira</span></p>
+            <p>2. swallow<span class="menu-price">1500 naira</span></p>
+            <p>3. spaghetti<span class="menu-price">1000 naira</span></p>
+            <p>4. yam<span class="menu-price">1200 naira</span></p>
+          </section>
+          <section id="tabSection-2" class="TabSection hideTab">
+            <p>1. Soft Drinks <span class="menu-price">2500 naira</span></p>
+            <p>2. Alcohol <span class="menu-price">1500 naira</span></p>
+            <p>3. Water <span class="menu-price">1000 naira</span></p>
+          </section>
+          <section id="tabSection-3" class="TabSection hideTab">
+            <p>1. coffee <span class="menu-price">2500 naira</span></p>
+            <p>2. Biscuit<span class="menu-price">1500 naira</span></p>
+            <p>3. Croissant<span class="menu-price">1000 naira</span></p>
+            <p>4. Expresso<span class="menu-price">1200 naira</span></p>
+          </section>
+          <section id="tabSection-4" class="TabSection hideTab">
+            <p>1. Ice cream<span class="menu-price">2500 naira</span></p>
+            <p>2. Chocolate<span class="menu-price">1500 naira</span></p>
+          </section>
+        </section>
+      </section>
+      <!-- resturant info -->
+      <section id="resturant-info">
+        <section class="business-hours">
+          <h2 class="resturant-info-title">Business Hours</h2>
+          <p class="hours">Monday-Friday: 8am-10pm</p>
+          <p class="hours">Saturday-Sunday: 10am-8pm</p>
+        </section>
+        <section class="contact">
+          <h2 class="resturant-info-title">Pick-Up</h2>
+          <p class="phone">+2347031988147</p>
+        </section>
+      </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="tabs.js"></script>
+  </body>
+</html>

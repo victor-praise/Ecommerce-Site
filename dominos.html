@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dominos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" async></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <a href="index.html">Home</a>
+        </span>
+        <h1>1 2 <span class="food">Foods</span></h1>
+        <div class="cart-btn">
+          <span class="nav-icon">cart</span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <header class="hero_dominos"></header>
+    <div id="cart-overlay" class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">X</span>
+        <h2>your cart</h2>
+        <div class="cart-content" id="cart-content">
+          <!-- end of cart item -->
+        </div>
+        <div class="cart-footer">
+          <h3>total: $ <span class="cart-total">0</span></h3>
+          <button class="clear-cart banner-btn">clear cart</button>
+          <button class="clear-cart2 banner-btn2">Purchase</button>
+        </div>
+      </div>
+    </div>
+    <section class="general">
+      <div class="general-center">
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/pepperonni.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">add to cart</button>
+            <h3 class="title-product">pepperonni pizza</h3>
+            <h4 class="price">$17</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/pizza-on-brown-wooden-board-825661.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="2">add to cart</button>
+            <h3 class="title-product">deluxe pizza</h3>
+            <h4 class="price">$30</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/pizza-with-raisins-on-top-2274787.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="3">add to cart</button>
+            <h3 class="title-product">Raisin pizza</h3>
+            <h4 class="price">$23</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/bacon-pizza-1460874.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="2">add to cart</button>
+            <h3 class="title-product">Bacon pizza</h3>
+            <h4 class="price">$36</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/pizza-in-green-box-1028433.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="2">add to cart</button>
+            <h3 class="title-product">Chicken pizza</h3>
+            <h4 class="price">$41</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/tomato-pizza-208537.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="2">add to cart</button>
+            <h3 class="title-product">tomato pizza</h3>
+            <h4 class="price">$11</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/cheese-cooking-delicious-dinner-365459.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="2">add to cart</button>
+            <h3 class="title-product">Cheese pizza</h3>
+            <h4 class="price">$41</h4>
+          </div>
+        </article>
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="./images/selective-focus-photography-of-baked-pizza-3053082.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="2">add to cart</button>
+            <h3 class="title-product">Vegetable pizza</h3>
+            <h4 class="price">$21</h4>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="pop-up-content">
+      <button class="close-pop-up">X</button>
+      <h2>To complete order, fill in your details</h2>
+      <form action="">
+        <input class="name-value" type="text" placeholder="Enter your Name" />
+        <input
+          class="address-value"
+          type="text"
+          placeholder="Enter your Address"
+        />
+        <button class="btn-pop-up">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
