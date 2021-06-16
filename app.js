@@ -168,6 +168,7 @@ services.getServices().then(services => servicesUi.displayServices(services));
     openCart.classList.remove("showCart");
   });
 })();
+
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoaded", ready);
 } else {
@@ -185,15 +186,15 @@ function ready() {
 }
 const closePopUp = document.querySelector(".close-pop-up");
 closePopUp.addEventListener("click", function() {
-  document.querySelector(".pop-up-content").style.display = "none";
+  document.querySelector(".overlays").style.display = "none";
 });
 document
   .getElementsByClassName("clear-cart2")[0]
   .addEventListener("click", function() {
-    document.querySelector(".pop-up-content").style.display = "block";
+    document.querySelector(".overlays").style.display = "flex";
     const openCart = document.querySelector(".cart");
     openCart.classList.remove("showCart");
-    document.querySelector(".pop-up-content").style.display = "block";
+    document.querySelector(".overlays").style.display = "flex";
     const infoSubmit = document
       .querySelector(".btn-pop-up")
       .addEventListener("click", function(e) {
@@ -304,7 +305,7 @@ function addItemToCart(title, priceNumber, imageSrc) {
               <div>
                 <h4 class="title-name">${title}</h4>
                 <h5 class="amount">$${priceNumber}</h5>
-                <button class="remove-item" type="button">Remove</button>
+                <button class="remove-item" type="button"><i class="fas fa-trash-alt"></i></button>
               </div>
               <div>
                 <input class="item-amount" type="number" value="1" />

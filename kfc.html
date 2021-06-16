@@ -7,6 +7,7 @@
     <title>KFC</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" async></script>
+    <script src="https://kit.fontawesome.com/f3d07c4b78.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -16,7 +17,7 @@
         </span>
         <h1>1 2 <span class="food">Foods</span></h1>
         <div class="cart-btn">
-          <span class="nav-icon">cart</span>
+          <span class="nav-icon"><i class="fas fa-shopping-cart"></i></span>
           <div class="cart-items">0</div>
         </div>
       </div>
@@ -107,18 +108,25 @@
         </article>
       </div>
     </section>
-    <div class="pop-up-content">
-      <button class="close-pop-up">X</button>
-      <h2>To complete order, fill in your details</h2>
-      <form action="">
-        <input class="name-value" type="text" placeholder="Enter your Name" />
-        <input
-          class="address-value"
-          type="text"
-          placeholder="Enter your Address"
-        />
-        <button class="btn-pop-up">Submit</button>
-      </form>
+
+    <div class="overlays">
+        <div class="pop-up-content">
+          <div class="close-pop">
+            <span class="close-pop-up">
+              <i class="far fa-times-circle"></i>
+            </span>
+          </div>
+          <div class="pop-up">
+            <h2>To complete order, fill in your details</h2>
+            <form action="" class="submit-form">
+              <input class="name-value" type="text" placeholder="Enter your Name" />
+              <input class="address-value" type="text" placeholder="Enter your Address" />
+              <button class="btn-pop-up-submit">Submit</button>
+            </form>
+          </div>
+        
+        </div>
     </div>
+   
   </body>
 </html>
